@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+</head>
+<body>
+    <div></div>
+
+    <style>
+        div {
+            background: #654430;
+            width: 180px;
+            height: 180px;
+            position: relative;
+        }
+
+        div:before, div:after {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            background: #f7ebcc;
+            content: '';
+            background-image: radial-gradient(
+                circle at center,
+                #5f5d5e 0px,
+                #5f5d5e 20px,
+                #252324 20px,
+                #252324 23px,
+                #5f5d5e 23px,
+                #5f5d5e 28px,
+                transparent 28px
+            );
+        }
+
+        div:before {
+            top: 0;
+            left: 0;
+        }
+
+        div:after {
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</body>
+</html>
